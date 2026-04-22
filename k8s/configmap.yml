@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-td-config
+data:
+  PROFESOR: "Juanvi"
+  BUCKET_NAME: "comotuquieras-f6883221"
