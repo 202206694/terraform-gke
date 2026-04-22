@@ -37,3 +37,10 @@ jobs:
         kubectl apply -f k8s/pvc.yaml
         kubectl apply -f k8s/deployment.yaml
         kubectl apply -f k8s/service.yaml
+    - name: update index.html in the pod
+      run: |
+            kubectl rollout status deployment/frontend-td-app
+        
+            POD_NAME=$(kubectl get pods -l app=frontend-td-app -o jsonpath="{.items[0].metadata.name}")
+
+            kubectl cp index.html $POD_NAME:/usr/share/nginx/html/index.html
