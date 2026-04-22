@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-  GKE_CLUSTER: frontend-td-cluster
+  GKE_CLUSTER: autopilot-cluster-1
   GKE_ZONE: europe-west1-b
 
 jobs:
