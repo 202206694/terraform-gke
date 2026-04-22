@@ -1,7 +1,7 @@
 
 variable "gcp-project" {
   description = "GCP project"
-  default     = "icai2025"
+  default     = "project-f6883221-1297-41bd-9eb"
 }
 
 variable "gcp-network" {
@@ -12,23 +12,23 @@ variable "gcp-network" {
 variable "gcp-region" {
   description = "GCP region"
   type        = string
-  default     = "us-central1"
+  default     = "europe-west1"
 }
 variable "gcp-zone" {
   description = "GCP zone"
   type        = string
-  default     = "us-central1-a"
+  default     = "europe-west1-b"
 }
 variable "gcp-cluster-name" {
   description = "Cluster name"
   type        = string
-  default     = "jvherrera-cluster"
+  default     = "autopilot-cluster-1"
 }
 
 variable "gcp-node-count" {
   description = "K8s Worker nodes"
   type        = number
-  default     = 2
+  default     = 1
 }
 variable "gcp-node-size" {
   description = "K8s Worker nodes"
@@ -38,5 +38,5 @@ variable "gcp-node-size" {
 variable "gcp-bucket-name" {
   description = "Bucket Name"
   type        = string
-  default     = "jherrera-bucket"
+  default     = "bucketcomotuquieras"
 }
